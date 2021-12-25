@@ -21,7 +21,7 @@ function Launchpad_Pro_MK3:__init(display_name, message_stream, port_in, port_ou
   MidiDevice.__init(self, display_name, message_stream, port_in, port_out)
 
   -- set device to "daw mode"
-  self:send_sysex_message(F0h,00h,20h,29h,02h,0Eh,10h,01h,F7h)
+  self:send_sysex_message(0x00,0x20,0x29,0x02,0x0E,0x10,0x01)
 
   -- this device has a color-space with 4 degrees of red and green
   self.colorspace = {4, 4, 0}
@@ -38,7 +38,7 @@ function Launchpad_Pro_MK3:release()
   TRACE("Launchpad_Pro_MK3:release()")
 
 --  self:send_cc_message(0,0)
-  self:send_sysex_message(F0h,00h,20h,29h,02h,0Eh,10h,00h,F7h)
+  self:send_sysex_message(0x00,0x20,0x29,0x02,0x0E,0x10,0x00)
 
   MidiDevice.release(self)
 

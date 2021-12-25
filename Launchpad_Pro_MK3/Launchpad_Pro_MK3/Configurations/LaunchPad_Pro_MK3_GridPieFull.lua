@@ -12,8 +12,8 @@ duplex_configurations:insert {
   device = {
     class_name = "Launchpad_Pro_MK3",
     display_name = "Launchpad_Pro_MK3",
-    device_port_in = "Launchpad_Pro_MK3",
-    device_port_out = "Launchpad_Pro_MK3",
+    device_port_in = "MIDIIN3 (LPProMK3 MIDI)",
+    device_port_out = "MIDIOUT3 (LPProMK3 MIDI)",
     control_map = "Controllers/Launchpad_Pro_MK3/Controlmaps/Launchpad_Pro_MK3.xml",
     thumbnail = "Controllers/Launchpad_Pro_MK3/Launchpad_Pro_MK3.bmp",
     protocol = DEVICE_PROTOCOL.MIDI,

@@ -4,19 +4,33 @@
 	<Description>Controlmap for Novation Launchpad_Pro_MK3</Description>
 	<Parameters>
 		<Column>
-			<Row>
-				<Group name="Controls" orientation="horizontal">
-					<Param value="CC#104" type="button" name="Up"		maximum="127" minimum="0"/>
-					<Param value="CC#105" type="button" name="Down"		maximum="127" minimum="0"/>
-					<Param value="CC#106" type="button" name="Left"		maximum="127" minimum="0"/>
-					<Param value="CC#107" type="button" name="Right"	maximum="127" minimum="0"/>
-					<Param value="CC#108" type="button" name="Session"	maximum="127" minimum="0"/>
-					<Param value="CC#109" type="button" name="User1"	maximum="127" minimum="0"/>
-					<Param value="CC#110" type="button" name="User2"	maximum="127" minimum="0"/>
-					<Param value="CC#111" type="button" name="Mixer"	maximum="127" minimum="0"/>
-				</Group>
-			</Row>
-			<Row>
+				<Group name="Controls" orientation="vertical">
+					<Param value="CC#104" type="button" name="Shift" maximum="127" minimum="0"/>
+          <Param value="CC#104" type="button" name="Up" maximum="127" minimum="0"/>
+          <Param value="CC#104" type="button" name="Down" maximum="127" minimum="0"/>
+          <Param value="CC#104" type="button" name="Clear" maximum="127" minimum="0"/>
+          <Param value="CC#104" type="button" name="Duplicate" maximum="127" minimum="0"/>
+          <Param value="CC#104" type="button" name="Quantize" maximum="127" minimum="0"/>
+          <Param value="CC#104" type="button" name="Fixed Length" maximum="127" minimum="0"/>
+          <Param value="CC#104" type="button" name="Play/Stop" maximum="127" minimum="0"/>
+          <Param value="CC#104" type="button" name="Record" maximum="127" minimum="0"/>
+        </Group>
+    </Column>
+    <Column>
+		  <Row>
+       <Group name="Controls2" orientaion="horizontal">
+          <Param value="CC#104" type="button" name="Left"	maximum="127" minimum="0"/>
+					<Param value="CC#105" type="button" name="Right"	maximum="127" minimum="0"/>
+					<Param value="CC#106" type="button" name="Session" maximum="127" minimum="0"/>
+					<Param value="CC#107" type="button" name="Note"	maximum="127" minimum="0"/>
+					<Param value="CC#108" type="button" name="Chord"	maximum="127" minimum="0"/>
+					<Param value="CC#109" type="button" name="Custom"	maximum="127" minimum="0"/>
+					<Param value="CC#110" type="button" name="Sequencer"	maximum="127" minimum="0"/>
+					<Param value="CC#111" type="button" name="Projects"	maximum="127" minimum="0"/>
+          <Param value="CC#119" type="button" name="Logo"	maximum="127" minimum="0"/>
+        </Group>
+      </Row>
+      <Row>
 				<Group name="Grid" columns="8">
 					<Param value="C--1" type="button" name="Button 1,1"	maximum="127" minimum="0"/>
 					<Param value="C#-1" type="button" name="Button 1,2"	maximum="127" minimum="0"/>
@@ -83,17 +97,43 @@
 					<Param value="A#8" type="button" name="Button 8,7"	maximum="127" minimum="0"/>
 					<Param value="B-8" type="button" name="Button 8,8"	maximum="127" minimum="0"/>
 				</Group>
-				<Group name="Triggers" orientation="vertical">
-					<Param value="G#-1" type="button" name="Trigger #1"	maximum="127" minimum="0"/>
-					<Param value="C-1" type="button" name="Trigger #2"	maximum="127" minimum="0"/>
-					<Param value="E-2" type="button" name="Trigger #3"	maximum="127" minimum="0"/>
-					<Param value="G#3" type="button" name="Trigger #4"	maximum="127" minimum="0"/>
-					<Param value="C-5" type="button" name="Trigger #5"	maximum="127" minimum="0"/>
-					<Param value="E-6" type="button" name="Trigger #6"	maximum="127" minimum="0"/>
-					<Param value="G#7" type="button" name="Trigger #7"	maximum="127" minimum="0"/>
-					<Param value="C-9" type="button" name="Trigger #8"	maximum="127" minimum="0"/>
-				</Group>
-			</Row>
+      </Row>
+      <Row>
+        <Group name="Controls3" orientaion="horizontal">
+          <Param value="CC#104" type="button" name="Toggle #1" maximum="127" minimum="0"/>
+          <Param value="CC#102" type="button" name="Toggle #2"	maximum="127" minimum="0"/>
+          <Param value="CC#102" type="button" name="Toggle #3"	maximum="127" minimum="0"/>
+          <Param value="CC#102" type="button" name="Toggle #4" maximum="127" minimum="0"/>
+          <Param value="CC#102" type="button" name="Toggle #5"	maximum="127" minimum="0"/>
+          <Param value="CC#102" type="button" name="Toggle #6"	maximum="127" minimum="0"/>
+          <Param value="CC#102" type="button" name="Toggle #7"	maximum="127" minimum="0"/>
+          <Param value="CC#102" type="button" name="Toggel #8"	maximum="127" minimum="0"/>
+        </Group>
+      </Row>
+      <Row>
+      <Group name="Controls4" orientaion="horizontal">
+          <Param value="CC#104" type="button" name="Arm" maximum="127" minimum="0"/>
+          <Param value="CC#104" type="button" name="Mute"	maximum="127" minimum="0"/>
+          <Param value="CC#105" type="button" name="Solo"	maximum="127" minimum="0"/>
+          <Param value="CC#106" type="button" name="Volume" maximum="127" minimum="0"/>
+          <Param value="CC#107" type="button" name="Pan"	maximum="127" minimum="0"/>
+          <Param value="CC#108" type="button" name="Sends"	maximum="127" minimum="0"/>
+          <Param value="CC#109" type="button" name="Device"	maximum="127" minimum="0"/>
+          <Param value="CC#110" type="button" name="Stop Clip"	maximum="127" minimum="0"/>
+        </Group>
+      </Row>
 		</Column>
+    <Column>
+      <Group name="Triggers" orientation="vertical">
+        <Param value="G#-1" type="button" name="Trigger #1"	maximum="127" minimum="0"/>
+        <Param value="C-1" type="button" name="Trigger #2"	maximum="127" minimum="0"/>
+        <Param value="E-2" type="button" name="Trigger #3"	maximum="127" minimum="0"/>
+        <Param value="G#3" type="button" name="Trigger #4"	maximum="127" minimum="0"/>
+        <Param value="C-5" type="button" name="Trigger #5"	maximum="127" minimum="0"/>
+        <Param value="E-6" type="button" name="Trigger #6"	maximum="127" minimum="0"/>
+        <Param value="G#7" type="button" name="Trigger #7"	maximum="127" minimum="0"/>
+        <Param value="C-9" type="button" name="Trigger #8"	maximum="127" minimum="0"/>
+      </Group>
+    </Column>
 	</Parameters>
 </Device>
