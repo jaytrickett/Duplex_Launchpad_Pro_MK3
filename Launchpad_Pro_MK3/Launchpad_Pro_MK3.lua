@@ -24,7 +24,7 @@ function Launchpad_Pro_MK3:__init(display_name, message_stream, port_in, port_ou
   self:send_sysex_message(0x00,0x20,0x29,0x02,0x0E,0x10,0x01)
 
   -- this device has a color-space with 4 degrees of red and green
-  self.colorspace = {4, 4, 0}
+  self.colorspace = {4, 4, 4}
 
 end
 
@@ -50,7 +50,7 @@ end
 -- @see Device.output_value
 
 function Launchpad_Pro_MK3:output_value(pt,xarg,ui_obj)
-  TRACE("Launchpad_Pro_MK3:output_value(pt,xarg,ui_obj)",pt,xarg,ui_obj)
+    TRACE("Launchpad_Pro_MK3:output_value(pt,xarg,ui_obj)",pt,xarg,ui_obj)
 
   --if xarg.skip_echo then
     --- parameter only exist in the virtual ui

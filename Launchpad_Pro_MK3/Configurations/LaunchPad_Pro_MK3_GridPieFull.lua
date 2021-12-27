@@ -26,20 +26,20 @@ duplex_configurations:insert {
           group_name = "Grid",
         },
 	      v_prev = {
-          group_name = "Controls",
+          group_name = "Controls2",
           index = 1,
         },
 	      v_next = {
-          group_name = "Controls",
+          group_name = "Controls2",
           index = 2,
         },
 	      h_prev = {
-          group_name = "Controls",
-          index = 3,
+          group_name = "Controls1",
+          index = 1,
         },
 	      h_next = {
-          group_name = "Controls",
-          index = 4,
+          group_name = "Controls1",
+          index = 2,
         },
     	},
       options = {
@@ -47,7 +47,7 @@ duplex_configurations:insert {
       },
     },
     Navigator = {
-      mappings = {
+        mappings = {
         blockpos = {
           group_name = "Triggers",
         },
@@ -56,20 +56,20 @@ duplex_configurations:insert {
     Transport = {
       mappings = {
         edit_mode = {
-          group_name = "Controls",
-          index = 5,
+          group_name = "Controls2",
+          index = 8,
         },
         start_playback = {
-          group_name = "Controls",
-          index = 6,
-        },
-        loop_pattern = {
-          group_name = "Controls",
+          group_name = "Controls2",
           index = 7,
         },
+        loop_pattern = {
+          group_name = "Controls2",
+          index = 5,
+        },
         follow_player = {
-          group_name= "Controls",
-          index = 8,
+          group_name= "Controls2",
+          index = 6,
         },
       },
       options = {
