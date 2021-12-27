@@ -10,3 +10,7 @@ It's the last menu item under Tools/Duplex.
 
 Planned:
     Working mute, solo, volume, pan, sends, device buttons
+    
+Tested in Renoise version: 3.3.2
+           Duplex Version: 1.05
+
